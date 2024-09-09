@@ -1,0 +1,25 @@
+{
+  "git": {
+    "requireCleanWorkingDir": true,
+    "requireUpstream": true,
+    "commit": true,
+    "commitMessage": "chore: release v${version}}",
+    "tag": true,
+    "tagName": "v${version}",
+    "tagAnnotation": "Release v${version}",
+    "push": true
+  },
+  "npm": {
+    "publish": true,
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "github": {
+    "release": true,
+    "releaseName": "v${version}",
+    "releaseNotes": "npx auto-changelog --stdout --commit-limit false -u"
+  },
+  "hooks": {
+    "after:bump": "npx auto-changelog -p"
+  }
+}
