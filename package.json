@@ -4,7 +4,6 @@
   "description": "image-preview-vue2 支持 PC、移动端",
   "author": "yangxinhao",
   "license": "MIT",
-  "private": true,
   "files": [
     "dist",
     "CHANGELOG.md",
